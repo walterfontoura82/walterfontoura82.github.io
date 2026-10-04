@@ -14,6 +14,7 @@ Mejorar el portfolio y aprender a trabajar con agentes de IA.
 - Verificación del diseño: textos y enlaces originales conservados, anclas internas válidas, ruta y dimensiones de foto comprobadas y git diff --check sin errores. Foco visible y movimiento reducido definidos en CSS. Pendiente de revisión visual en navegador (escritorio, 320–390 px, zoom 200 %, teclado y movimiento reducido); abrir la página no equivale a inspeccionarla automáticamente.
 
 ## Decisiones
+- Foto ajustada según la captura del usuario: marco casi cuadrado (17:18), hasta 340 × 360 px en escritorio y 280 × 296 px en móvil. object-fit: cover mantiene la imagen sin deformación y recorta parte inferior del retrato; el archivo original no se modifica. Verificación de CSS y diff realizada; revisión visual pendiente.
 - Revisión pública de GitHub del 2026-10-04: se consultaron 24 repositorios públicos y sus árboles de archivos en las ramas predeterminadas. README y código respaldan Cloud Operations Portal y la propuesta de asociar DevOps Challenge a devsu-demo-devops_python (Django REST, Docker, CI/GHCR y Terraform sobre Kubernetes; despliegue manual). Cloud Native Portfolio API y Terraform Labs siguen pendientes de una correspondencia clara; mi-ec2-terra está vacío. No se modificaron index.html ni style.css ni se ejecutaron despliegues o pruebas remotas.
 - Trabajar con cambios pequeños y verificables.
 - Mantener la información profesional sin inventar certificaciones ni experiencias.

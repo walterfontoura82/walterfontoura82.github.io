@@ -79,7 +79,7 @@ section > p:last-child, article > p:last-child { margin-bottom: 0; }
     width: 100%;
     max-width: 340px;
     height: auto;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 17 / 18;
     object-fit: cover;
     justify-self: center;
     border: 1px solid #56749c;
