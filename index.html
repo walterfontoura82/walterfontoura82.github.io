@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de Walter Fontoura, Cloud & DevOps Engineer.">
     <title>Walter Fontoura | Cloud & DevOps Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <h1>Walter Fontoura</h1>
 
             <ul>
-                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -26,21 +27,26 @@
     <main>
 
         <section id="hero">
+            <div class="hero-content">
             <h2>Cloud & DevOps Engineer</h2>
-            <p>AWS | Terraform | Kubernetes | Docker | Python</p>
+            <p class="hero-stack">AWS | Terraform | Kubernetes | Docker | Python</p>
             <p>
-                Cloud Engineer con experiencia en automatización de procesos,
-                operación de infraestructura AWS e infraestructura como código.
+                Cloud Engineer con enfoque en automatización, operación de infraestructura AWS
+                y despliegues con buenas prácticas DevOps.
             </p>
-            <a href="#projects">Ver proyectos</a>
+            <div class="hero-actions">
+                <a class="primary-link" href="#projects">Ver proyectos</a>
+                <a class="secondary-link" href="#contact">Contacto</a>
+            </div>
+            </div>
+            <img class="profile-photo" src="assets/images/perfil.jpeg" alt="Walter Fontoura" width="1086" height="1448">
         </section>
 
         <section id="about">
-            <h2>Sobre Mi</h2>
+            <h2>Sobre mí</h2>
             <p>
-                Soy Cloud Engineer con experiencia en entornos productivos,
-                automatización con Python, administración de infraestructura AWS,
-                monitoreo y despliegues utilizando buenas prácticas DevOps.
+                Soy Cloud Engineer con experiencia en entornos productivos, automatización con Python,
+                administración de infraestructura AWS, monitoreo y despliegues siguiendo buenas prácticas DevOps.
             </p>
         </section>
 
@@ -77,43 +83,22 @@
             <div class="projects-grid">
 
                 <article class="project-card">
-                    <h3>Cloud Native Portfolio API</h3>
+                    <h3>DevOps Challenge — API Django</h3>
                     <p>
-                        API con FastAPI, Docker, Kubernetes, Terraform, AWS EKS,
-                        PostgreSQL, DynamoDB, GitHub Actions, Prometheus y Grafana.
+                        API Django REST dockerizada, con GitHub Actions para validación y publicación de imágenes,
+                        y configuración de despliegue en Kubernetes mediante Terraform.
                     </p>
-                    <a href="#">Ver repositorio</a>
+                    <a href="https://github.com/walterfontoura82/devsu-demo-devops_python" target="_blank" rel="noreferrer">Ver repositorio</a>
                 </article>
 
                 <article class="project-card">
-                    <h3>DevOps Challenge</h3>
+                    <h3>Cloud Operations Portal</h3>
                     <p>
-                        Dockerización de aplicación, pipeline CI/CD, despliegue en
-                        Kubernetes, Terraform y documentación técnica.
+                        Laboratorio DevOps en AWS con Terraform, API FastAPI dockerizada,
+                        workflows para publicación en ECR y despliegue en EKS,
+                        y configuración de monitoreo con Grafana y Zabbix.
                     </p>
-                    <a href="#">Ver repositorio</a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Kubernetes Labs</h3>
-                    <p>
-                        Prácticas con Pods, Deployments, ReplicaSets, Services,
-                        Ingress, ConfigMaps, Secrets y HPA.
-                        "Cloud Operations Portal es un laboratorio DevOps completo sobre AWS. 
-                        El proyecto aprovisiona infraestructura con Terraform, valida una API FastAPI, construye y versiona imágenes Docker,
-                         las publica en Amazon ECR y despliega automáticamente la aplicación sobre Amazon EKS."
-                        Repo: https://github.com/walterfontoura82/cloud-operations-portal
-                    </p>
-                    <a href="#">Ver repositorio</a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Terraform Labs</h3>
-                    <p>
-                        Prácticas con AWS EC2, S3, RDS, DynamoDB, IAM, VPC y Lambda
-                        utilizando infraestructura como código.
-                    </p>
-                    <a href="#">Ver repositorio</a>
+                    <a href="https://github.com/walterfontoura82/cloud-operations-portal" target="_blank" rel="noreferrer">Ver repositorio</a>
                 </article>
 
             </div>
@@ -129,12 +114,13 @@
 
         <section id="contact">
             <h2>Contacto</h2>
-            <p>Email: walterfontoura82@gmail.com</p>
-            <p>LinkedIn: https://linkedin.com/in/walterfontoura82-</p>
-            <p>GitHub: https://github.com/walterfontoura82</p>
+            <p>Email: <a href="mailto:walterfontoura82@gmail.com">walterfontoura82@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/walterfontoura82-" target="_blank" rel="noreferrer">linkedin.com/in/walterfontoura82-</a></p>
+            <p>GitHub: <a href="https://github.com/walterfontoura82" target="_blank" rel="noreferrer">github.com/walterfontoura82</a></p>
         </section>
 
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
